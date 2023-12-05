@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> weather and AQI app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<div class="navbar">
+    
+   <div class="left_nav">
+    <h1 class="logo_name">WEATHER</h1>
+   </div>
+    <div class="right_nav"> 
+
+        <ul>
+            <li> <input type="text" id="searchinput" placeholder="Enter Your city"></li>
+            <li> <button class="btn"id="submitbtn">Search</button></li>
+            <li><button class="btn" id="clearbtn">Clear</button></li>
+        </ul>
+    </div>
+</div>
+
+<p id="table_head">YOUR CITY</p>
+<div class="more"> <p>WEATHER</p></div>
+<div class="Info">
+
+<div class="card">
+   <b><p class="card_style">Temperature : <span class="span_color" id="temp"></span>&degC</p> </b>
+    <p class="card_style">Minimum Temp : <span class="span_color"id="maxtemp"></span> &degC</p>	
+    <p class="card_style">Maximum Temp : <span class="span_color"id="mintemp"></span> &degC</p>
+</div>
+
+<div class="card">
+    <p class="card_style">Wind speed : <span class="span_color" id="feelsLike"></span></p>
+        <p class="card_style">Wind Degree : <span class="span_color"id="Winddegree"></span></p>
+		 <p class="card_style">Humidity : <span class="span_color"id="humidity"></span></p> 
+</div>
+
+<div class="card">
+    <p class="card_style">Sunrise  :   <span class="span_color" id="sunrise"></span> </p>
+           <p class="card_style">Sunset  :   <span class="span_color" id="sunset"> </span> </p>
+		   <p class="card_style">cloudPct  :   <span class="span_color"id="cloudPct"></span></p>
+		   <p class="card_style">Feels Like  :  <span class="span_color"id="Windspeed"></span></p>
+           
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="more"> <p>AIR QUALITY INDEX</p></div>
+<div class="Info">
+<div class="card">
+    <p class="card_style">CO-Aqi    : <span  class="span_color" id="co"></span></p>
+	    <p class="card_style">NO2-Aqi   : <span class="span_color" id="no2"></span></p>   
+<p  class="card_style">O3-Aqi  : <span  class="span_color" id="o3"></span></p>
+<p  class="card_style">SO2_Aqi  :<span  class="span_color" id="so2"></span></p>
+<p class="card_style">PM10_Aqi  :<span  class="span_color" id="PM"></span></p>
+<b><p class="card_style" >Overall_Aqi  :<span  class="span_color" id="overall"></span></p></b>
+
+</div>
+
+<div class="card">
+    <p class="card_style">CO-concentration  : <span  class="span_color" id="co_conc"></span></p> 
+    <p class="card_style">NO2-concentration  : <span  class="span_color" id="no2_conc"></span></p>
+      <p class="card_style">O3_concentration  : <span   class="span_color" id="o3_conc"></span></p>  
+    <p  class="card_style">SO2_concentration  : <span  class="span_color" id="so2_conc"></span></p>
+    <p class="card_style">PM10_concentration  : <span  class="span_color" id="PM_conc"></span></p>
+
+</div>
+
+</div>
+
+
+    </div> 
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
