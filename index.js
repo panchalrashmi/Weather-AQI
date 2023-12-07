@@ -65,7 +65,7 @@ async function apiFetch() {
           sunrise.innerHTML = response.sunrise;
           sunset.innerHTML = response.sunset;
           feelsLike.innerHTML = response.feels_like;
-          table_head.innerHTML = "HERE IS  "+city.toUpperCase()+"'s"+" WEATHER AND AQI ! ";
+          table_head.innerHTML = "HERE IS  "+city.toUpperCase()+"'S"+" WEATHER AND AQI ! ";
         })
         .catch((err) => console.error(err));
     };
